@@ -99,7 +99,7 @@ public class ActivityWithNavigationMenuPatient extends AppCompatActivity
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar,11, 1);
+                this, drawer, toolbar,14, 1);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 

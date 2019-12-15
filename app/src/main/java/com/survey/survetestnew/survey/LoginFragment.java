@@ -147,7 +147,8 @@ public class LoginFragment extends Fragment implements
                 } else {
                     if (new ConnectionDetector(myContext).isConnectingToInternet()) {
                      //   LoginApiCall(user_mobile, user_pwd);
-                         startActivity(new Intent(myContext, ActivityWithNavigationMenuPatient.class));
+//                         startActivity(new Intent(myContext, ActivityWithNavigationMenuPatient.class));
+                        startActivity(new Intent(myContext, NavigationMenuActivity.class));
                          getActivity().finish();
 
                     } else {

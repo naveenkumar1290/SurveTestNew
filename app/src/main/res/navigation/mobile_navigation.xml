@@ -3,41 +3,33 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_Dashboard">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.cs.nks.testnvigationactivity.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/navigation_Dashboard"
+        android:name="com.survey.survetestnew.survey.HomeFragment"
+        tools:layout="@layout/fragment_about_us" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.cs.nks.testnvigationactivity.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/navigation_AssignedKilns"
+        android:name="com.survey.survetestnew.survey.AssignedKilnsFragment"
+
+        tools:layout="@layout/fragment_about_us" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.cs.nks.testnvigationactivity.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/navigation_report_bonded_labor"
+        android:name="com.survey.survetestnew.survey.ReportBondedLabor"
+
+        tools:layout="@layout/damage_report_new" />
 
     <fragment
-        android:id="@+id/nav_tools"
-        android:name="com.cs.nks.testnvigationactivity.ui.tools.ToolsFragment"
-        android:label="@string/menu_tools"
-        tools:layout="@layout/fragment_tools" />
+        android:id="@+id/navigtion_report_environment"
+        android:name="com.survey.survetestnew.survey.ReportEnvironment"
+        tools:layout="@layout/fragment_environment" />
+
 
     <fragment
-        android:id="@+id/nav_share"
-        android:name="com.cs.nks.testnvigationactivity.ui.share.ShareFragment"
-        android:label="@string/menu_share"
-        tools:layout="@layout/fragment_share" />
-
-    <fragment
-        android:id="@+id/nav_send"
-        android:name="com.cs.nks.testnvigationactivity.ui.send.SendFragment"
-        android:label="@string/menu_send"
-        tools:layout="@layout/fragment_send" />
+        android:id="@+id/navigation_FAQ"
+        android:name="com.survey.survetestnew.survey.FAQFragment"
+        tools:layout="@layout/activity_about_us" />
 </navigation>
