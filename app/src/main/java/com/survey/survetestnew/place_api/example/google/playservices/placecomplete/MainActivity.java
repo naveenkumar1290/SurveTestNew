@@ -32,8 +32,8 @@ import android.location.LocationManager;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
+/*import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;*/
 import android.text.Html;
 import android.text.Spanned;
 import android.text.TextUtils;
@@ -45,10 +45,15 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+/*
 
 import com.cs.nks.easycouriers.R;
 import com.cs.nks.easycouriers.place_api.example.android.common.activities.SampleActivityBase;
 import com.cs.nks.easycouriers.place_api.example.android.common.logger.Log;
+*/
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.PendingResult;
@@ -65,6 +70,9 @@ import com.google.android.gms.location.places.PlaceBuffer;
 import com.google.android.gms.location.places.Places;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
+import com.survey.survetestnew.R;
+import com.survey.survetestnew.place_api.common.activities.SampleActivityBase;
+import com.survey.survetestnew.place_api.common.logger.Log;
 
 import java.io.IOException;
 import java.util.Calendar;
@@ -140,7 +148,7 @@ ImageView img_back;
     }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         // Construct a GoogleApiClient for the {@link Places#GEO_DATA_API} using AutoManage

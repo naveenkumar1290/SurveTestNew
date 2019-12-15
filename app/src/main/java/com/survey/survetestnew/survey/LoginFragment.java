@@ -76,7 +76,7 @@ public class LoginFragment extends Fragment implements
 
 
     static final int RequestPermissionCode = 100;
-    // private static final String TAG = MainActivity.class.getSimpleName();
+
     private static final int RC_SIGN_IN = 007;
     Context myContext;
     UTIL utill;

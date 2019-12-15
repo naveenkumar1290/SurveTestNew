@@ -73,7 +73,7 @@
                     android:paddingRight="16dp"
                     android:text=""
                     android:hint="Mail id"
-                    android:background="@drawable/round_corner_shape"
+
                     android:textAlignment="center"
                     android:textSize="14dp" />
                 <TextView

@@ -12,8 +12,8 @@ import androidx.core.app.NotificationCompat;
 
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
-import com.survey.survetestnew.MainActivity;
 import com.survey.survetestnew.R;
+import com.survey.survetestnew.survey.ActivityWithNavigationMenuPatient;
 
 import java.util.Map;
 
@@ -71,7 +71,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
       //  Intent intent = null;
 
 
-           Intent intent = new Intent(this, MainActivity.class);
+           Intent intent = new Intent(this, ActivityWithNavigationMenuPatient.class);
         intent.putExtra("push", "1");
         intent.putExtra("Branch_Id", Branch_Id);
 
